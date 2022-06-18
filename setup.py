@@ -1,12 +1,12 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 from typing import List
 
 #Declaring valriables below for setup function
 PROJECT_NAME="housing-predictors"
-PROJECT_NAME="0.0.1"
+PROJECT_VERSION="0.0.1"
 AUTHOR="SUDAM GHOSH"
 DESCRIPTION="THis is first House price prediction"
-PACKAGES=["housing"]
+
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 #Requirement file name
@@ -19,14 +19,14 @@ def get_requirements_list()->List[str]:
     of libraries mentioned in requirements.txt file
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
     
 setup(
 name=PROJECT_NAME,
-version=PROJECT_NAME,
+version=PROJECT_VERSION,
 author=AUTHOR,
 description=DESCRIPTION,
-packages=PACKAGES,
+packages=find_packages(),
 install_requires=get_requirements_list()
 )
 
