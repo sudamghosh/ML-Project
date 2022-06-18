@@ -29,7 +29,7 @@ To Add files to git
 ```
 git add .
 ```
-
+git
 OR
 ```
 git add <file_name>
