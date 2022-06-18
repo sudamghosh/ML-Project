@@ -28,7 +28,6 @@ author=AUTHOR,
 description=DESCRIPTION,
 packages=PACKAGES,
 install_requires=get_requirements_list()
-
 )
 
 if __name__=="__main__":
