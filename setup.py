@@ -5,7 +5,7 @@ from typing import List
 PROJECT_NAME="housing-predictors"
 PROJECT_VERSION="0.0.1"
 AUTHOR="SUDAM GHOSH"
-DESCRIPTION="THis is first House price prediction"
+DESCRIPTION="This is first House price prediction"
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
